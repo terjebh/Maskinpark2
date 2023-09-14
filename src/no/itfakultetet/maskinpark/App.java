@@ -27,8 +27,9 @@ public class App {
             } else if (menyvalg.equals("3")) {
 
             } else if (menyvalg.equals("4")) {
-                  if(Laptop.getAntallLaptopper() > 0) Laptop.visLaptopper();
-                  if(Desktop.getAntallDesktopper() > 0) Desktop.visDesktopper();
+                RapportImpl rapport = new RapportImpl();
+                  if(Laptop.getAntallLaptopper() > 0) rapport.visRapport("Laptop");
+                  if(Desktop.getAntallDesktopper() > 0) rapport.visRapport("Desktop");
             } else {
                 System.out.println("Ukjent menyvalg");
             }

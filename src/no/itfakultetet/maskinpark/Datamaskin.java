@@ -1,6 +1,7 @@
 package no.itfakultetet.maskinpark;
 
 public class Datamaskin {
+    public static int sumPrisDatamaskiner;
     protected int årsmodell;
     protected int pris;
     protected int vekt;
