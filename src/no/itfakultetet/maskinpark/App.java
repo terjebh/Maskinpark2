@@ -21,13 +21,14 @@ public class App {
                 System.out.println("Farvel...");
                 System.exit(0);
             } else if (menyvalg.equals("1")) {
-
+                Laptop.lagNyLaptop();
             } else if (menyvalg.equals("2")) {
-
+                Desktop.lagNyDesktop();
             } else if (menyvalg.equals("3")) {
 
             } else if (menyvalg.equals("4")) {
-
+                  if(Laptop.getAntallLaptopper() > 0) Laptop.visLaptopper();
+                  if(Desktop.getAntallDesktopper() > 0) Desktop.visDesktopper();
             } else {
                 System.out.println("Ukjent menyvalg");
             }
